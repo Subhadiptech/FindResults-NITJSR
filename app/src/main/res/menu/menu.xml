@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/res"
+    android:title="Result"
+    android:icon="@drawable/books"
+    android:iconTint="#FF5722"
+    />
+    <item android:id="@+id/leader"
+        android:title="LeaderBoard"
+        android:icon="@drawable/leaderboard"
+        android:iconTint="#FF5722"
+        />
+</menu>

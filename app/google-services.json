@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88014317116",
+    "project_id": "find-results-nitjsr-e28fe",
+    "storage_bucket": "find-results-nitjsr-e28fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88014317116:android:19332fd71c11bb8b11c539",
+        "android_client_info": {
+          "package_name": "com.ersubhadip.findresults_nitjsr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88014317116-hf08bgns8j6poicb5f4ru1mtqd404j8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGa__5OhdoqyjLWZxS0v5S_J-eOn_MkDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88014317116-hf08bgns8j6poicb5f4ru1mtqd404j8a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.resultFragment">
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="2dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:fontFamily="@font/arsenal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lol"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTv"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="1"
+        app:lottie_rawRes="@raw/hello"
+        android:scaleType="fitXY"
+         />
+
+    <TextView
+        android:id="@+id/profileTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Student's Profile :"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#D7C5B9B9"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arsenal"
+        />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/profileTag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:text="Name -"
+            android:textSize="18sp"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/regTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text="Reg. Number -"
+            android:textSize="18sp"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/semesterTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text="Semester -"
+            android:textSize="18sp"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/branchTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text="Branch -"
+            android:textSize="18sp"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/profileTag"
+        app:layout_constraintLeft_toRightOf="@id/l1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/nameDispleyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/regDisplayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+
+
+            />
+        <TextView
+            android:id="@+id/semesterDisplayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="18sp"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/branchDisplayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/l2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/sgpaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:text="SGPA"
+            android:paddingStart="100dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/arsenal"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <ProgressBar
+            android:id="@+id/sgpaProgress"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginLeft="10dp"
+            android:progress="0"
+            android:progressTint="#E80A780F"
+            android:progressBackgroundTint="#B3AAAA"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+
+
+            />
+        <TextView
+            android:id="@+id/sgpaDisplayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/l3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/cgpaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:text="CGPA"
+            android:paddingStart="100dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/arsenal"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <ProgressBar
+            android:id="@+id/cgpaProgress"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginLeft="10dp"
+            android:progress="0"
+            android:progressTint="#E80A780F"
+            android:progressBackgroundTint="#B3AAAA"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+
+            />
+        <TextView
+            android:id="@+id/cgpaDisplayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/l4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="66dp"
+        android:text="To download the official Result pdf, Click Below:"
+        android:textSize="14sp"
+        android:textColor="#E30C0C"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_corner"
+        android:text="Download Result"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/arsenal"
+        android:elevation="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
